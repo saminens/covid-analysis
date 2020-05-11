@@ -8,12 +8,22 @@ git clone https://github.com/saminens/covid-analysis
 ```
 # How to use this repository?
 
+## Adaptation of the Bass Model Diffusion Curves
+
+```buildoutcfg
+cd ./covid-analysis
+python src/transition.py
+```
+![Variation of Curves with Curve type](./images/adapted_bass_modal_diffusion_curvesc.png)
+
+## Country wise analysis
 1. Download the data from [John Hopkins Repository](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports)
 2. Run the following script in this repository
 ```buildoutcfg
 cd ./covid-analysis
 python -m src.curve_fit --input-fpth ~/Desktop/COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv --mitigation-start-date 2020-02-18 --p0-before 0 200000 0 0.08333 0 --p0-after 0 83403 5 0.08333 0 --country China
 ```
+![Quantifying mitigation efforts in China](./images/Analysis_China.png)
 
 # Future Work:
 
