@@ -81,7 +81,14 @@ def plot_curves(popt1, popt2, x2, xdata, ydata, country):
 def main(input_file_path, country, mitigation_start_date, p0_before, p0_after):
     """
 
-    Returns: NA, main function
+    Args:
+        input_file_path:
+        country:
+        mitigation_start_date:
+        p0_before:
+        p0_after:
+
+    Returns:
 
     """
     x1, y1, x2, y2, xdata, ydata = prepare_data(input_file_path, country, mitigation_start_date)
